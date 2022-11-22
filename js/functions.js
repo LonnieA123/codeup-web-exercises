@@ -21,7 +21,7 @@
  * console.log 'helloMessage' to check your work
  */
 
- var helloMessage = sayHello('Lonnie');
+ let helloMessage = sayHello('Lonnie');
  console.log(helloMessage);
 
 
@@ -32,13 +32,13 @@
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-var myName = "Lonnie"
-sayHello(myName)
-console.log(sayHello(myName))
+let myName = "john"
+let hellomessage2 = sayHello(myName)
+console.log(hellomessage2)
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+let random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -62,7 +62,8 @@ function isTwo(num){
     return (num == 2);
 }
 
-console.log(isTwo(5))
+let test = isTwo(random);
+console.log(test);
 
 /**
  * TODO:
@@ -76,10 +77,21 @@ console.log(isTwo(5))
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-function calculateTip(num1 , num2){
-    return (num1 * num2)
+function calculateTip(total , tip){
+   let tipFormatted = (tip/100)
+    console.log(tipFormatted)
+    let answer = (total * tipFormatted)
+    console.log(answer)
+    let fixedAnswer = answer.toFixed(2)
+    console.log(fixedAnswer)
+
+    return fixedAnswer
+
+
+
+
 }
-console.log(calculateTip(0.15 , 33.42))
+console.log(calculateTip(100 , 20))
 
 /**
  * TODO:
@@ -87,9 +99,10 @@ console.log(calculateTip(0.15 , 33.42))
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var total = prompt("what was your total?")
-var tip = prompt("What Percentage Will you tip?")
-alert("The suggested tip is "+ calculateTip(tip,total))
+let totalBill = prompt("what was your total?")
+let tips = prompt("What Percentage Will you tip?")
+let tipUser = calculateTip(totalBill,tips)
+alert("The suggested tip is "+ "$" + tipUser)
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -104,12 +117,11 @@ alert("The suggested tip is "+ calculateTip(tip,total))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(num1, num2,){
-    var discount = (num1 * num2)
-    return num1 - discount
-
-
-
-}
+function applyDiscount(price, discount,){
+    let discountFormatted = discount / 100;
+    let result = (1 - discountFormatted) * price;
+   return result.toFixed(2);}
 
 console.log(applyDiscount(45.99,.12))
+
+
