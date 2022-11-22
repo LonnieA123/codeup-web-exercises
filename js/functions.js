@@ -78,20 +78,16 @@ console.log(test);
  */
 
 function calculateTip(total , tip){
-   let tipFormatted = (tip/100)
+   let tipFormatted = ("0." + tip)
     console.log(tipFormatted)
+    let parsed = parseFloat(tipFormatted)
+    console.log(parsed)
     let answer = (total * tipFormatted)
     console.log(answer)
-    let fixedAnswer = answer.toFixed(2)
-    console.log(fixedAnswer)
-
-    return fixedAnswer
-
-
-
+    return answer;
 
 }
-console.log(calculateTip(100 , 20))
+console.log(calculateTip(165 , 17))
 
 /**
  * TODO:
@@ -122,6 +118,7 @@ function applyDiscount(price, discount,){
     let result = (1 - discountFormatted) * price;
    return result.toFixed(2);}
 
-console.log(applyDiscount(45.99,.12))
+console.log(applyDiscount(45.99,12))
+
 
 
