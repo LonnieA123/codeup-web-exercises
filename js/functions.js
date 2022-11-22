@@ -104,8 +104,9 @@ alert("The suggested tip is "+ calculateTip(tip,total))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(num1, num2){
-    return (num1 * num2)
+function applyDiscount(num1, num2,){
+    var discount = (num1 * num2)
+    return num1 - discount
 
 
 
