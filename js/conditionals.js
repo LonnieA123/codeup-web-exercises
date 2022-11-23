@@ -22,6 +22,29 @@
  * console.logging the function's return value
  */
 
+
+
+
+analyzeColor("green")
+
+function analyzeColor(colors) {
+
+    if (colors === "blue") {
+        return("i love blue too")
+    } else if (colors === "red") {
+        return("red is okay")
+    } else if (colors === "green") {
+        return("green is actually the best")
+    } else {
+        return("is that even a freaking color")
+    }
+
+}
+
+
+
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -39,6 +62,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+switchAnalyzeColor("red")
+function switchAnalyzeColor(color) {
+
+    switch (color) {
+        case "blue":
+            return("i love blue too")
+            break;
+        case "green":
+            return("green is actually the best")
+            break;
+        case "red":
+            return("red is okay")
+            break;
+        default: "is this even a color"
+            break
+    }
+}
+
 
 /**
  * TODO:
@@ -46,6 +87,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+let userInput = prompt('what is your color');
+alert(analyzeColor(userInput))
+
+
 
 /* ########################################################################## */
 
@@ -68,6 +114,28 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(luckyNumber,totalAmount) {
+
+    if (luckyNumber == "1") {
+        luckyNumber = .10
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber == "2") {
+        luckyNumber = .25
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber == "3") {
+        luckyNumber = .35
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber == "4") {
+        luckyNumber = .50
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber == "5") {
+        return "you get everything for free!"
+
+    }
+}
+
+
+
 
 /**
  * TODO:
