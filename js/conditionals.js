@@ -145,9 +145,12 @@ function calculateTotal(luckyNumber,totalAmount) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+//Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
 
+
+var total = prompt("what is your total?")
+alert(calculateTotal(luckyNumber,total))
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -166,3 +169,33 @@ function calculateTotal(luckyNumber,totalAmount) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+
+
+let enter = confirm("would you like to enter a number?")
+
+if(enter == true ){
+  let numEnter = prompt("What is your number?")
+   let number = Number(numEnter)
+    let plus100 = number + 100
+   alert("this number plus 100 is " + plus100)
+    function oddEven(numbered) {
+    if (numbered % 2 == 0) {
+        return ("even.");
+    } else {
+        return ("odd.");
+    }
+}
+   alert("this number is " + oddEven(number))
+    function posNeg(numbers){
+      if (Math.sign(numbers) == 1){
+          return("positive")
+      } else {
+          return("negative")
+      }
+    }
+   alert("this number is " + posNeg(number))
+} else if (enter == false){
+    alert("goodbye")
+}
+
