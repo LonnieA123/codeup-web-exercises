@@ -28,12 +28,12 @@
 // analyzeColor("green")
 //
 // function analyzeColor(colors) {
-//
-//     if (colors === "blue") {
+// let lowerColor = colors.toLowerCase()
+//     if (lowerColor === "blue") {
 //         return("i love blue too")
-//     } else if (colors === "red") {
+//     } else if (lowerColor === "red") {
 //         return("red is okay")
-//     } else if (colors === "green") {
+//     } else if (lowerColor === "green") {
 //         return("green is actually the best")
 //     } else {
 //         return("is that even a freaking color")
@@ -58,27 +58,32 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
+
+let result2 = switchAnalyzeColor(randomColor)
+console.log(result2)
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-// switchAnalyzeColor("red")
-// function switchAnalyzeColor(color) {
-//
-//     switch (color) {
-//         case "blue":
-//             return("i love blue too")
-//             break;
-//         case "green":
-//             return("green is actually the best")
-//             break;
-//         case "red":
-//             return("red is okay")
-//             break;
-//         default: "is this even a color"
-//             break
-//     }
-// }
+switchAnalyzeColor("red")
+function switchAnalyzeColor(color) {
+
+    switch (color) {
+        case "blue":
+            return("i love blue too")
+            break;
+        case "green":
+            return("green is actually the best")
+            break;
+        case "red":
+            return("red is okay")
+            break;
+        default:
+            return("is this even a color")
+            break
+    }
+}
 
 
 /**
@@ -88,8 +93,9 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
-// let userInput = prompt('what is your color');
-// alert(analyzeColor(userInput))
+let userInput = prompt('what is your color');
+let answer = switchAnalyzeColor(userInput)
+alert(answer)
 
 
 
@@ -114,27 +120,66 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function calculateTotal(luckyNumber,totalAmount) {
-    console.log(luckyNumber)
-    if (luckyNumber == "1") {
-        luckyNumber = .10
-        return (1 - luckyNumber) * totalAmount
-    } else if (luckyNumber == "2") {
-        luckyNumber = .25
-        return (1 - luckyNumber) * totalAmount
-    } else if (luckyNumber == "3") {
-        luckyNumber = .35
-        return (1 - luckyNumber) * totalAmount
-    } else if (luckyNumber == "4") {
-        luckyNumber = .50
-        return (1 - luckyNumber) * totalAmount
-    } else if (luckyNumber == "5") {
-        return "you get everything for free!"
+// function calculateTotal(luckyNumber,totalAmount) {
+//     console.log(luckyNumber)
+//     if (luckyNumber === "0") {
+//         return ("you get nothing")
+//     } else if (luckyNumber === "1") {
+//         luckyNumber = .10
+//         return (1 - luckyNumber) * totalAmount
+//     } else if (luckyNumber === "2") {
+//         luckyNumber = .25
+//         return (1 - luckyNumber) * totalAmount
+//     } else if (luckyNumber === "3") {
+//         luckyNumber = .35
+//         return (1 - luckyNumber) * totalAmount
+//     } else if (luckyNumber === "4") {
+//         luckyNumber = .50
+//         return (1 - luckyNumber) * totalAmount
+//     } else if (luckyNumber === "5") {
+//         return "you get everything for free!"
+//
+//     }
+// }
 
+function calculateTotal(luckyNum, total) {
+    let discount,
+        discountedPrice;
+
+    switch (luckyNum) {
+        case 0:
+            discount = 0
+            break;
+        case 1:
+            discount = 0.1;
+            break
+        case 2:
+            discount = .25
+            break
+        case 3:
+            discount = .35
+            break
+        case 4:
+            discount = .50
+            break
+        case 5:
+            discount = 1;
+            break
+        default:
+            return "INCORRECT NUMBER"
+        break;
     }
+
+
+
+if (!isNaN(total)){
+        discountedPrice = (total * (1 - discount));
+    } else {
+        return "ur dumb"
+    }
+
+    return discountedPrice.toFixed(2);
 }
-
-
 
 
 /**
@@ -149,8 +194,12 @@ function calculateTotal(luckyNumber,totalAmount) {
 var luckyNumber = Math.floor(Math.random() * 6);
 
 
-// var total = prompt("what is your total?")
-// alert(calculateTotal(luckyNumber,total))
+var total = prompt("what is your total?")
+let userResult2 = calculateTotal(luckyNumber,total)
+alert(`your lucky number was ${luckyNumber}
+The price before the discount was $${total}
+the price after the discount was ${userResult2}`)
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -170,20 +219,59 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
-if(confirm("would you like to enter a number?") == true){
-  let userInput = prompt("what is your number?")
-    let number = parseInt(userInput)
-    let evenOdd = number % 2
-    if (evenOdd == 0){
-        alert("this number is even")}
-    else {alert("this number is odd")}
- alert("this number + 100 is " +  (number + 100))
-  if (number > -1){
-     alert ("this number is positive")
-  } else alert("this number is negative")
-} else {
-    alert("goodbye")
+// if(confirm("would you like to enter a number?") == true){
+//   let userInput = prompt("what is your number?")
+// if(isNaN(userInput)) {
+//     alert ("this is not a number!")
+// } else {
+//     let number = parseInt(userInput)
+//     let evenOdd = number % 2
+//     if (evenOdd == 0){
+//         alert("this number is even")}
+//     else {alert("this number is odd")}
+//  alert("this number + 100 is " +  (number + 100))
+//   if (number > -1){
+//      alert ("this number is positive")
+//   } else alert("this number is negative")
+//  } } else {
+//     alert("goodbye")
+// }
+
+
+let userConfirm = confirm("would you like to enter a number?")
+let usernumber;
+if(userConfirm) {
+    usernumber = prompt("what is your number")
+    if (isEven(usernumber)) {
+        alert("this number is even")
+    } else {
+        alert("the number is odd")
+    }
+
+    alert("the number plus 100 equals:" + add100(usernumber))
+
+
+    if (isPos(usernumber)) {
+        alert("the number is positive")
+    } else {
+        alert("the number is negative")
+    }
 }
+
+function isEven(num){
+    return num % 2 === 0
+}
+
+function add100(num){
+    return parseFloat(num) + 100
+}
+
+function isPos(num){
+    return num > 0
+}
+
+
+
 
 
 
@@ -214,4 +302,14 @@ if(confirm("would you like to enter a number?") == true){
 // } else if (enter == false){
 //     alert("goodbye")
 // }
+
+// let number = prompt("give me a number")
+//
+// if (isNaN(number)){
+//     alert("this is not a number!")
+// } else {
+//     alert("your number is " + number )
+// }
+
+
 
