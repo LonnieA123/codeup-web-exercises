@@ -25,21 +25,21 @@
 
 
 
-// analyzeColor("green")
-//
-// function analyzeColor(colors) {
-// let lowerColor = colors.toLowerCase()
-//     if (lowerColor === "blue") {
-//         return("i love blue too")
-//     } else if (lowerColor === "red") {
-//         return("red is okay")
-//     } else if (lowerColor === "green") {
-//         return("green is actually the best")
-//     } else {
-//         return("is that even a freaking color")
-//     }
-//
-// }
+analyzeColor("green")
+
+function analyzeColor(colors) {
+let lowerColor = colors.toLowerCase()
+    if (lowerColor === "blue") {
+        return("i love blue too")
+    } else if (lowerColor === "red") {
+        return("red is okay")
+    } else if (lowerColor === "green") {
+        return("green is actually the best")
+    } else {
+        return("is that even a freaking color")
+    }
+
+}
 
 
 
@@ -120,27 +120,27 @@ alert(answer)
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-// function calculateTotal(luckyNumber,totalAmount) {
-//     console.log(luckyNumber)
-//     if (luckyNumber === "0") {
-//         return ("you get nothing")
-//     } else if (luckyNumber === "1") {
-//         luckyNumber = .10
-//         return (1 - luckyNumber) * totalAmount
-//     } else if (luckyNumber === "2") {
-//         luckyNumber = .25
-//         return (1 - luckyNumber) * totalAmount
-//     } else if (luckyNumber === "3") {
-//         luckyNumber = .35
-//         return (1 - luckyNumber) * totalAmount
-//     } else if (luckyNumber === "4") {
-//         luckyNumber = .50
-//         return (1 - luckyNumber) * totalAmount
-//     } else if (luckyNumber === "5") {
-//         return "you get everything for free!"
-//
-//     }
-// }
+function calculateTotal(luckyNumber,totalAmount) {
+    console.log(luckyNumber)
+    if (luckyNumber === "0") {
+        return ("you get nothing")
+    } else if (luckyNumber === "1") {
+        luckyNumber = .10
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber === "2") {
+        luckyNumber = .25
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber === "3") {
+        luckyNumber = .35
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber === "4") {
+        luckyNumber = .50
+        return (1 - luckyNumber) * totalAmount
+    } else if (luckyNumber === "5") {
+        return "you get everything for free!"
+
+    }
+}
 
 function calculateTotal(luckyNum, total) {
     let discount,
@@ -219,56 +219,56 @@ the price after the discount was ${userResult2}`)
  * HINT: The way we prompt for a value could be improved
  */
 
-// if(confirm("would you like to enter a number?") == true){
-//   let userInput = prompt("what is your number?")
-// if(isNaN(userInput)) {
-//     alert ("this is not a number!")
-// } else {
-//     let number = parseInt(userInput)
-//     let evenOdd = number % 2
-//     if (evenOdd == 0){
-//         alert("this number is even")}
-//     else {alert("this number is odd")}
-//  alert("this number + 100 is " +  (number + 100))
-//   if (number > -1){
-//      alert ("this number is positive")
-//   } else alert("this number is negative")
-//  } } else {
-//     alert("goodbye")
+if(confirm("would you like to enter a number?") == true){
+  let userInput = prompt("what is your number?")
+if(isNaN(userInput)) {
+    alert ("this is not a number!")
+} else {
+    let number = parseInt(userInput)
+    let evenOdd = number % 2
+    if (evenOdd == 0){
+        alert("this number is even")}
+    else {alert("this number is odd")}
+ alert("this number + 100 is " +  (number + 100))
+  if (number > -1){
+     alert ("this number is positive")
+  } else alert("this number is negative")
+ } } else {
+    alert("goodbye")
+}
+
+
+// let userConfirm = confirm("would you like to enter a number?")
+// let usernumber;
+// if(userConfirm) {
+//     usernumber = prompt("what is your number")
+//     if (isEven(usernumber)) {
+//         alert("this number is even")
+//     } else {
+//         alert("the number is odd")
+//     }
+//
+//     alert("the number plus 100 equals:" + add100(usernumber))
+//
+//
+//     if (isPos(usernumber)) {
+//         alert("the number is positive")
+//     } else {
+//         alert("the number is negative")
+//     }
 // }
-
-
-let userConfirm = confirm("would you like to enter a number?")
-let usernumber;
-if(userConfirm) {
-    usernumber = prompt("what is your number")
-    if (isEven(usernumber)) {
-        alert("this number is even")
-    } else {
-        alert("the number is odd")
-    }
-
-    alert("the number plus 100 equals:" + add100(usernumber))
-
-
-    if (isPos(usernumber)) {
-        alert("the number is positive")
-    } else {
-        alert("the number is negative")
-    }
-}
-
-function isEven(num){
-    return num % 2 === 0
-}
-
-function add100(num){
-    return parseFloat(num) + 100
-}
-
-function isPos(num){
-    return num > 0
-}
+//
+// function isEven(num){
+//     return num % 2 === 0
+// }
+//
+// function add100(num){
+//     return parseFloat(num) + 100
+// }
+//
+// function isPos(num){
+//     return num > 0
+// }
 
 
 

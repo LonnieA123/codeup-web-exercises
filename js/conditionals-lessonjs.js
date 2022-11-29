@@ -1,64 +1,64 @@
 
 
-//var cities =prompt ('where do you live')
+var cities =prompt ('where do you live')
 
 
-// if (cities == "Boston"){
-//     console.log('your here')
-// } else if (cities == "San Antonio"){
-//     console.log('i guess this works')
-// }
-// else{
-//     console.log('ur in the wrong place')
-// }
-//
-// addNumbers("5")
-// function addNumbers(num1){
-//
-//     if (typeof num1 == "string"){
-//         number = parseInt(num1)
-//         return number + 2
-//     } else {
-//         return number + 2
-//     }
-//
-//
-// }
-//
-//
-//var pizzaPreference = prompt("What kind of pizza do you like?");
-//
-// if (pizzaPreference === "pineapple and hot sauce" || pizzaPreference === "meatballs") {
-//     alert("What a coincidence, that's my favorite!");
-// } else if (pizzaPreference.toLowerCase() === "cheese") {
-//     alert("Just plain cheese? Okay...");
-// } else {
-//     alert(pizzaPreference + " isn't my favorite, but let's order some!");
-// }
+if (cities == "Boston"){
+    console.log('your here')
+} else if (cities == "San Antonio"){
+    console.log('i guess this works')
+}
+else{
+    console.log('ur in the wrong place')
+}
+
+addNumbers("5")
+function addNumbers(num1){
+
+    if (typeof num1 == "string"){
+        number = parseInt(num1)
+        return number + 2
+    } else {
+        return number + 2
+    }
 
 
-//let success = true;
-// var message;
-// if (success) {
-//     message = "the operation was successful"
-// }
-// else {
-//     message = 'the operation was not successful '
-// }
+}
 
-//let message = success ? "the operation was successful" : "the operation was a failure you died "
-//console.log(message)
 
-// switch(pizzaPreference){
-//     case "cheese":
-//         console.log("cheese is good")
-//         break;
-//     case "pineapples" :
-//             console.log("ew")
-//             break;
-//     default :
-//             console.log("ur boring")
-//             break; }
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+if (pizzaPreference === "pineapple and hot sauce" || pizzaPreference === "meatballs") {
+    alert("What a coincidence, that's my favorite!");
+} else if (pizzaPreference.toLowerCase() === "cheese") {
+    alert("Just plain cheese? Okay...");
+} else {
+    alert(pizzaPreference + " isn't my favorite, but let's order some!");
+}
+
+
+let success = true;
+var message;
+if (success) {
+    message = "the operation was successful"
+}
+else {
+    message = 'the operation was not successful '
+}
+
+let message = success ? "the operation was successful" : "the operation was a failure you died "
+console.log(message)
+
+switch(pizzaPreference){
+    case "cheese":
+        console.log("cheese is good")
+        break;
+    case "pineapples" :
+            console.log("ew")
+            break;
+    default :
+            console.log("ur boring")
+            break; }
 
 let number = 3;
 switch(number) {

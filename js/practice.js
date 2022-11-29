@@ -18,9 +18,10 @@ function identity(input){
     return input
 }
 
-function isFive(input){
-    if(input == 5)
+function isFive(input) {
+    if (input == 5)
         return (true)
-} else{
-    return (false)
+    else {
+        return (false)
+    }
 }
