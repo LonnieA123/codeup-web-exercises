@@ -24,21 +24,37 @@ function sayGreeting(greeting){
 sayGreeting("howdy")
 
 
-//expression
-function sayHello(greeting){
-    return greeting
+// //expression
+// function sayHello(greeting){
+//     return greeting
+// }
+//
+//
+// //declaration
+// var sayHello = function(greeting){
+//     return greeting
+// }
+
+
+// //arrow
+// const sayHello = (greeting) => greeting{
+//     return greeting
+// }
+
+
+//IIFE
+//
+// (function(){
+//
+//
+//
+//
+// })();
+function Five(num){
+    return num = 5
 }
 
-
-//declaration
-var sayHello = function(greeting){
-    return greeting
+function addTwo(fn){
+    return fn() + 2;
 }
-
-
-//arrow
-const sayHello = (greeting) => greeting{
-    return greeting
-}
-
 
