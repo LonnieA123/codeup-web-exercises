@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // let iteration = 0;
+  //
+  // while (iteration < 10){
+  //   console.log(`while loop ${iteration + 1}`);
+  //   iteration++
+  // }
+  //
+  // iteration = 0
+  //
+  // do {
+  //   console.log(`do while loop #${iteration + 1}`)
+  //   iteration++
+  // } while (iteration < 10)
+  //
+  // for (let i = 0; i < 10; i++){
+  //   console.log(`for loop number ${i + 1}`)
+  // }
+
+
+  let array = ['oranges','apples','tomatoes','pears','grapes','pineapples']
+
+
+  // for (let i = 0; i < array.length; i++){
+  //   console.log(`${array[i]} taste good`)
+  // }
+
+for(let i = 0; i < array.length; i++){
+  if(array[i] === 'tomatoes'){
+
+    console.log("your a fruit?!")
+    break
+  } else {
+    fruitMessage(array[i]);
+  }
+}
+
+  function fruitMessage(input){
+    console.log(`${input} are cool`)
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
