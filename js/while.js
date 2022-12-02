@@ -6,9 +6,6 @@ function random(min, max,){
 }
 
 
-let conesToBuy = random(1,5)
-let conesToSell = random(50,100)
-
 
 
 
