@@ -12,21 +12,21 @@ let conesToSell = random(50,100)
 
 
 
-do {
-    let conesToSell = random(50, 100);
-    let conesToBuy = random(1,5);
-
-    if (conesToBuy <= conesToSell) {
-        console.log(`${conesToBuy}cones sold`)
-        conesToSell = conesToSell - conesToBuy
-
-     } else {
-        console.log('no more cones')
-        break;
-
-     }
-
-} while (conesToSell > 0)
+// do {
+//     let conesToSell = random(50, 100);
+//     let conesToBuy = random(1,5);
+//
+//     if (conesToBuy <= conesToSell) {
+//         console.log(`${conesToBuy}cones sold`)
+//         conesToSell = conesToSell - conesToBuy
+//
+//      } else {
+//         console.log('no more cones')
+//         break;
+//
+//      }
+//
+// } while (conesToSell > 0)
 
 
 
