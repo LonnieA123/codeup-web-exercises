@@ -37,3 +37,31 @@
 //
 //
 //
+
+
+function MultTable(input){
+for(let i = 1; i <= 10; i++){
+    console.log(`${input} x ${i} = ${input * i}`)
+} }
+
+function randomNumber(max,min){
+    Math.floor(Math.random() * (max - min + 1))}
+
+
+
+
+for(let i = 1; i <= 10; i++) {
+    let randomNumbers = Math.floor(Math.random() * (200 - 20 + 1))
+    if (randomNumbers % 2 === 0) {
+        console.log(`${randomNumbers} is even`)
+    } else {
+        console.log(`${randomNumbers} is odd`)
+    }
+}
+
+// for(let i = 1; i <= 9; i++){
+//     console.log(i)
+//     for(let i = 1; i <= 9; i++){
+//
+//     }
+// }
