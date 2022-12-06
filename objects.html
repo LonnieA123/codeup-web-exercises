@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<script>
+<script src="js/objects.js"></script>
 
 
 
@@ -89,98 +89,104 @@
 // - isOpen
 // Define your objects using both literal syntax to create all properties and values at once and also try defining empty objects and assign property values in separate statements using the dot notation.
 
-let bev = [{
-    brandName: 'sprite',
-    type: 'soda',
-    vol: 'enough',
-    price: '90cents',
-    expiration: 'three days ago',
-    datesDrank: ['12th', '15th', '25th']
-},
-{
-    brandName: 'coke',
-    type: 'soda',
-    vol: 'too much',
-    price: '70 cents',
-    expiration: 'four days ago',
-    datesDrank: ['11th', '19th', '25th']
-},
-    {
-        brandName: 'pepsi',
-        type: 'soda',
-        vol: 'not enough',
-        price: '50 cents',
-        expiration: 'one day ago',
-        datesDrank: ['9th', '14th', '28th']
-    }]
-
-const pets = [
-    {
-    name:'spot',
-    isDog: true,
-    toys:['rope','bone','ball']
-},
-    {
-        name:'max',
-        isDog: false ,
-        toys:['laser','catnip']
-    }, {
-        name:'dog',
-        isDog: true,
-        toys: ['algae','bubbles']
-    }]
-
-
-
-for(let i = 0; i < pets.length; i += 1){
-    console.log(pets[i].toys);
-}
-
-pets.forEach((pet) => {
-    console.log(pet.name)
-})
-
-
-
-
-
-// -- Mini Exercise 2
-const users = [{
-        givenName:'Sam',
-        age: 21
-},
-{
-    givenName:'Cathy',
-    age: 34
-},
-{
-    givenName:'Karen',
-    age: 43
-}
-]
-
-users.forEach(function (user){
-    console.log(user.givenName)
-})
-
-console.log(`${users[0].givenName} ${users[1].givenName} ${users[2].givenName}`)
-
-// for(let i = 0; i < 3; i ++) {
-//     users[i].givenName = "john doe"
+// let bev = [{
+//     brandName: 'sprite',
+//     type: 'soda',
+//     vol: 'enough',
+//     price: '90cents',
+//     expiration: 'three days ago',
+//     datesDrank: ['12th', '15th', '25th']
+// },
+// {
+//     brandName: 'coke',
+//     type: 'soda',
+//     vol: 'too much',
+//     price: '70 cents',
+//     expiration: 'four days ago',
+//     datesDrank: ['11th', '19th', '25th']
+// },
+//     {
+//         brandName: 'pepsi',
+//         type: 'soda',
+//         vol: 'not enough',
+//         price: '50 cents',
+//         expiration: 'one day ago',
+//         datesDrank: ['9th', '14th', '28th']
+//     }]
+//
+// const pets = [
+//     {
+//     name:'spot',
+//     isDog: true,
+//     toys:['rope','bone','ball']
+// },
+//     {
+//         name:'max',
+//         isDog: false ,
+//         toys:['laser','catnip']
+//     }, {
+//         name:'dog',
+//         isDog: true,
+//         toys: ['algae','bubbles']
+//     }]
+//
+//
+//
+// for(let i = 0; i < pets.length; i += 1){
+//     console.log(pets[i].toys);
 // }
-
-users.forEach(function (user){
-    user.givenName = "john doe"
-})
-
-// for(let i = 0; i < 3; i ++) {
-//     users[i].age = users[i].age + 1
+//
+// pets.forEach((pet) => {
+//     console.log(pet.name)
+// })
+//
+//
+//
+//
+//
+// // -- Mini Exercise 2
+// const users = [{
+//         givenName:'Sam',
+//         age: 21
+// },
+// {
+//     givenName:'Cathy',
+//     age: 34
+// },
+// {
+//     givenName:'Karen',
+//     age: 43
 // }
-
-users.forEach(function (user){
-    user.age += 1
-})
-
+// ]
+//
+// users.forEach(function (user){
+//     console.log(user.givenName)
+// })
+//
+// console.log(`${users[0].givenName} ${users[1].givenName} ${users[2].givenName}`)
+//
+// let names = ""
+// users.forEach(function (user){
+//     names += user.givenName + '';
+// })
+// console.log(names.trim());
+//
+// // for(let i = 0; i < 3; i ++) {
+// //     users[i].givenName = "john doe"
+// // }
+//
+// users.forEach(function (user){
+//     user.givenName = "john doe"
+// })
+//
+// // for(let i = 0; i < 3; i ++) {
+// //     users[i].age = users[i].age + 1
+// // }
+//
+// users.forEach(function (user){
+//     user.age += 1
+// })
+//
 
 
 
@@ -193,6 +199,6 @@ users.forEach(function (user){
 
 
 
-</script>
+
 </body>
 </html>
