@@ -7,6 +7,17 @@ function random(min, max,){
 
 
 
+let i = 2;
+while(i <= 65536){
+    console.log(i)
+    i *= 2
+}
+
+let allCones = random(50,100)
+
+do{
+
+}while(allCones <= 0)
 
 
 // do {

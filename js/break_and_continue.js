@@ -16,3 +16,19 @@
 // }
 
 
+let userNum = prompt("choose a number")
+
+for(let i = 1; i <= 50; i = i + 2){
+    if(i == userNum){
+        console.log(`skipp this number : ${i}`)
+    } else {
+        console.log(`Here is a odd number :${i}`)
+    }
+
+
+
+
+
+}
+
+

@@ -15,16 +15,16 @@
 // }
 //
 //
-// for (let i = 0; i < 9; i++) {
-//     let number = i + 1;
-//     let result = number.toString()
-//
-//     for (let j = 1; j <= i; j++) {
-//         result = result + number;
-//
-//     }
-//     console.log(result)
-// }
+for (let i = 0; i < 9; i++) {
+    let number = i + 1;
+    let result = number.toString()
+
+    for (let j = 1; j <= i; j++) {
+        result = result + number;
+
+    }
+    console.log(result)
+}
 //
 // // for (let i = 0; i < 9; i++){
 // //     let answer = String(i + 1).repeat(i + 1);
@@ -59,9 +59,29 @@ for(let i = 1; i <= 10; i++) {
     }
 }
 
-// for(let i = 1; i <= 9; i++){
+
+
+
+for(let i = 0; i < 9; i++){
+    let number = i + 1;
+    let result = number.toString()
+
+    for(let j = 1; j <= i; j++){
+        result = result + number;
+    }
+    console.log(result)
+}
+
+for(let i = 0; i < 9; i++){
+    console.log(String(i + 1).repeat(i + 1))
+}
+
+
+// for(let i = 100; i > 0; i = i - 5){
 //     console.log(i)
-//     for(let i = 1; i <= 9; i++){
-//
-//     }
 // }
+
+
+
+
+
