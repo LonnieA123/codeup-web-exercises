@@ -174,15 +174,44 @@ books.forEach(function (book, index, ){
      */
 
 
-    function createBook(title, authorName){
 
-       let book = {
+
+
+
+    function bookObject(title, authorName){
+        let authorArray = authorName.split(" ");
+        let bookObject ={
             title: title,
-            author: authorName,
-        }
-        return book
+            author: {
+                firstName: authorArray[0],
+                lastName: authorArray[1]
+            }
+        };
+        return bookObject;
     }
 
 
-    console.log(createBook('work','mrWork'))
+    let myBook = bookObject('guitar for dummies','lonnie arellano')
+
+
+    let books3 = [
+        bookObject("The Hobwbit", "lonnie Arellano"),
+        bookObject("The Hobit", "lnnie Arellano"),
+
+    ];
+
+
+
+
+    // function createBook(title, authorName){
+    //
+    //    let book = {
+    //         title: title,
+    //         author: authorName,
+    //     }
+    //     return book
+    // }
+    //
+    //
+    // console.log(createBook('work','mrWork'))
 })();
