@@ -15,9 +15,7 @@
     let person = {
         firstName: "rick",
         lastName: "sanchez",
-        sayHello: function(){
-            return "Hello From Rick Sanchez"
-        }
+
     }
 console.log(person.firstName)
     console.log(person.lastName)
@@ -32,8 +30,15 @@ console.log(person.firstName)
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+    person.sayHello = function(){
+        return (`Hello From ${this.firstName} ${this.lastName}`)
+    }
     console.log(person.sayHello())
+
+    person.middleName = 'joseph'
+
+
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -67,7 +72,7 @@ console.log(person.firstName)
     }
     })
 
-
+shoppers[0].age = 25
 
 
     /** TODO:
@@ -85,7 +90,7 @@ console.log(person.firstName)
 
 
     let books = [
-        { title: 'book1',
+        { title: 'the hobbit',
           author: {
               firstName: 'hung',
               lastName: 'ho'
@@ -145,10 +150,17 @@ console.log(person.firstName)
         console.log(`Book # ${i + 1}`)
         console.log(`Title: ${books[i].title}`)
         console.log('Author:' + books[i].author.firstName + ' ' + books[i].author.lastName)
-
-
-
     }
+
+books.forEach(function (book, index, ){
+        console.log(`book # ${index + 1}`)
+        console.log(`Title: ${books[index].title}`)
+    console.log('Author:' + books[index].author.firstName + ' ' + books[index].author.lastName)
+    });
+
+
+
+
 
     /**
      * Bonus:
@@ -162,12 +174,13 @@ console.log(person.firstName)
      */
 
 
-    function createBook(titled, authorName){
+    function createBook(title, authorName){
 
-        let book = {
-            title: titled,
+       let book = {
+            title: title,
             author: authorName,
         }
+        return book
     }
 
 
