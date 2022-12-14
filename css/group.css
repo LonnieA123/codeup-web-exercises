@@ -1,0 +1,16 @@
+#myid {
+    background-color: lightskyblue !important;
+}
+
+.myclass {
+    background-color: darkslategray !important;
+}
+
+p {
+    background-color: darkred !important;
+}
+
+
+p {
+    background-repeat: repeat;
+}

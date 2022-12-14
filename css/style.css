@@ -1,11 +1,16 @@
-body {
-    font-family: arial;
+.page-wrapper{
+    height: 100vh;
+    font-family: Kailasa;
 }
 
-.section-header{
-    color: cornflowerblue;
+.main-header{
+    text-align: center;
 }
 
-.fancy-header{
+.row h2{
     color: mediumpurple;
+    text-decoration: underline;
 }
+
+
+
