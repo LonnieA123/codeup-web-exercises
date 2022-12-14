@@ -26,3 +26,21 @@ a:hover{
 
 
 
+
+
+.table-style {
+    margin-left: 50px;
+    margin-bottom: 25px;
+    border: 5px black;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.table-style{
+    border-collapse: collapse;
+}
+
+
+
+
