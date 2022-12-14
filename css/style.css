@@ -12,5 +12,17 @@
     text-decoration: underline;
 }
 
+.row ul{
+    list-style-type: circle;
+}
+
+.row ol{
+    list-style-type: square;
+}
+
+a:hover{
+    color: mediumpurple;
+}
+
 
 
