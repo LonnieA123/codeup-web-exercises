@@ -16,7 +16,7 @@
  *
  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
  *
- * You should use an if-else-if-else block to return different messages.
+ * You should use an if-else-if-else block to return different messages.css.
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value

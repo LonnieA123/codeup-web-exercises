@@ -51,7 +51,7 @@ console.log(person.firstName)
      *
      * Uncomment the lines below to create an array of objects where each object
      * represents one shopper. Use a foreach loop to iterate through the array,
-     * and console.log the relevant messages for each person
+     * and console.log the relevant messages.css for each person
      */
 
     let shoppers = [
