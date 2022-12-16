@@ -1,0 +1,17 @@
+.container{
+    width: 500px;
+}
+
+
+
+.block1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.block2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}

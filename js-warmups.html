@@ -9,50 +9,112 @@
     <script>
 
 
+      // const pets = [
+      //   {
+      //     name: 'Sparky',
+      //     type: 'Fish',
+      //     age: 4
+      //   },
+      //   {
+      //     name: 'Mr. Pig',
+      //     type: 'Cat',
+      //     age: 4
+      //   },
+      //   {
+      //     name: 'Bubba',
+      //     type: 'Dog',
+      //     age: 5
+      //   },
+      //   {
+      //     name: 'Pickles',
+      //     type: 'Dog',
+      //     age: 10
+      //   }
+      //
+      // ];
+      //
+      //
+      //
+      //
+      // function averageAge(pets){
+      //   let sumAge = 0;
+      //   let dogCount = 0;
+      //   for(let i = 0; i < pets.length; i++){
+      //     if(pets[i].type === 'Dog'){
+      //       sumAge += pets[i].age
+      //       dogCount++;
+      //
+      //     }
+      //   }
+      //   return sumAge / dogCount
+      //
+      // }
+      //
+      //
+      //
+      // const morePets = [
+      //   {
+      //     name: 'Sparky',
+      //     type: 'Fish',
+      //     age: 4
+      //   },
+      //   {
+      //     name: 'Mr. Pig',
+      //     type: 'Cat',
+      //     age: 4
+      //   },
+      //   {
+      //     name: 'Bubba',
+      //     type: 'Dog',
+      //     age: 5
+      //   },
+      //   {
+      //     name: 'Beans',
+      //     type: 'Dog',
+      //     age: 3
+      //   },
+      //   {
+      //     name: 'Mr. Salmon',
+      //     type: 'Fish',
+      //     age: 1
+      //   }
+      // ];
+      //
+      //
+      // function noFish(morePets){
+      //   for(let i = 0; i < morePets.length; i++){
+      //     if(morePets[i].type === 'Fish'){
+      //        morePets.splice([i],1)
+      //     }
+      //   }
+      //   return morePets;
+      //
+      // }
+      //
+      //
+      //
+      //
+      //
+      // function noFishArray(morePets){
+      //   let output = [];
+      //   for(let i = 0; i < morePets.length; i++){
+      //     if(morePets[i].type !== 'Fish'){
+      //       output.push(morePets[i])
+      //     }
+      //   }
+      //   return output;
+      //
+      // }
+      //
+      //
+      //
+      //
+      // console.log(noFish(morePets))
+      // console.log(noFishArray(morePets))
+
+
+
       const pets = [
-        {
-          name: 'Sparky',
-          type: 'Fish',
-          age: 4
-        },
-        {
-          name: 'Mr. Pig',
-          type: 'Cat',
-          age: 4
-        },
-        {
-          name: 'Bubba',
-          type: 'Dog',
-          age: 5
-        },
-        {
-          name: 'Pickles',
-          type: 'Dog',
-          age: 10
-        }
-
-      ];
-
-
-
-
-      function averageAge(pets){
-        let sumAge = 0;
-        let dogCount = 0;
-        for(let i = 0; i < pets.length; i++){
-          if(pets[i].type === 'Dog'){
-            sumAge += pets[i].age
-            dogCount++;
-
-          }
-        }
-        return sumAge / dogCount
-
-      }
-
-
-
-      const morePets = [
         {
           name: 'Sparky',
           type: 'Fish',
@@ -81,36 +143,17 @@
       ];
 
 
-      function noFish(morePets){
-        for(let i = 0; i < morePets.length; i++){
-          if(morePets[i].type === 'Fish'){
-             morePets.splice([i],1)
-          }
+      function longestName(pets){
+        let longestName = "";
+        for(let i = 0; i < pets.length; i++){
+          if(pets[i].name.length > longestName.length){
+            longestName =  pets[i].name
+
         }
-        return morePets;
+        }
+return longestName;
 
       }
-
-
-
-
-
-      function noFishArray(morePets){
-        let output = [];
-        for(let i = 0; i < morePets.length; i++){
-          if(morePets[i].type !== 'Fish'){
-            output.push(morePets[i])
-          }
-        }
-        return output;
-
-      }
-
-
-
-
-      console.log(noFish(morePets))
-      console.log(noFishArray(morePets))
 
 
 
