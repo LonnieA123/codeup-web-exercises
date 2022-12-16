@@ -1,0 +1,24 @@
+* {
+   box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.page-wrapper {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    background-color: #848487;
+}
+
+span{
+    padding: 10px;
+}
