@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+
+.page-wrapper {
+    height: 100vh;
+}
+
+
+nav {
+    background: lightgrey;
+}
+
+ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+
+.logo{
+    font-size: 3em;
+    padding: .2em 0 .2em 0;
+    /*flex-grow: 10;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+
+
+nav ul li:nth-child(5) {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+a{
+    display: inline-block;
+}
+
+a:hover{
+    color: #3B94D9;
+}
+
+
+
