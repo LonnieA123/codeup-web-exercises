@@ -192,6 +192,25 @@ return longestName;
 
 
 
+      // Write a function, iBeforeE that takes in a string and returns the
+      // string with any ‘ei’ characters replaced with ‘ie’.
+      // iBeforeE(‘ei’) // returns ‘ie’
+      // iBeforeE(‘height’) // returns ‘hieght’
+      // iBeforeE(‘heist’) // returns ‘hiest’
+      // iBeforeE(‘their’) // returns ‘thier’
+      // iBeforeE(‘theirtheir’) // returns ‘thierthier’
+
+
+
+      function iBeforeE(input){
+        if (input.includes("ei")){
+          return input.replace("ei","ie")
+        } else {
+          return `${input} does not have e and i`
+        }
+      }
+
+
 
 
 
