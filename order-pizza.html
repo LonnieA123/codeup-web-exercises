@@ -76,13 +76,16 @@
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
       <button class="nav-link active" id="size-crust-tab" data-bs-toggle="tab" data-bs-target="#size-crust"
-              type="button" role="tab" aria-controls="size-crust" aria-selected="true">Size And Crust</button>
+              type="button" role="tab" aria-controls="size-crust" aria-selected="true"> <span class="badge bg-secondary rounded-pill">1</span> Size And Crust
+      </button>
 
       <button class="nav-link" id="cheese-sauce-tab" data-bs-toggle="tab" data-bs-target="#cheese-sauce"
-              type="button" role="tab" aria-controls="cheese-sauce" aria-selected="false">Cheese And Crust</button>
+              type="button" role="tab" aria-controls="cheese-sauce" aria-selected="false"> <span class="badge bg-secondary rounded-pill">2</span> Cheese Crust
+      </button>
 
       <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings"
-              type="button" role="tab" aria-controls="toppings" aria-selected="false">Toppings</button>
+              type="button" role="tab" aria-controls="toppings" aria-selected="false"> <span class="badge bg-secondary rounded-pill">3</span> Toppings
+      </button>
 
     </div>
 
@@ -119,6 +122,7 @@
                 </div>
               </li>
             </ul>
+
           </div>
         </div>
 
@@ -147,6 +151,15 @@
                 </div>
               </li>
             </ul>
+
+            <div class="card" style="width: 100%;">
+
+              <div class="card-header d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Next Step</button>
+            </div>
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -159,7 +172,7 @@
       <div class="card">
 
         <div class="card-header bg-primary text-white">
-          Choose Size And Crust
+          Choose Cheese And Sauce
         </div>
 
         <div class="card-body">
@@ -173,9 +186,10 @@
 
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Normal</option>
-                  <option value="1">none</option>
-                  <option value="2">normal</option>
-                  <option value="3">ALOT</option>
+                  <option value="1">Light</option>
+                  <option value="2">Extra</option>
+                  <option value="3">Double</option>
+                  <option value="4">Normal</option>
                 </select>
               </li>
 
@@ -199,10 +213,11 @@
 
               <li class="list-group-item">
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Normal</option>
-                  <option value="1">none</option>
-                  <option value="2">normal</option>
-                  <option value="3">ALOT</option>
+                  <option selected>Tomato</option>
+                  <option value="1">Tomato</option>
+                  <option value="2">Marinara</option>
+                  <option value="3">BBQ</option>
+                  <option value="4">Alfredo</option>
                 </select>
               </li>
 
@@ -213,13 +228,25 @@
               <li class="list-group-item">
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Normal</option>
-                  <option value="1">none</option>
+                  <option value="1">Light</option>
                   <option value="2">normal</option>
-                  <option value="3">ALOT</option>
+                  <option value="3">Extra</option>
+                  <option value="4">ALOT</option>
                 </select>
               </li>
 
             </ul>
+
+            <div class="card" style="width: 100%;">
+              <div class="card-header d-flex justify-content-end">
+                <button type="button" class="btn btn-primary"> < Previous Page</button>
+                <button type="button" class="btn btn-primary">Next Page > </button>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>
@@ -234,7 +261,7 @@
 
       <div class="card">
         <div class="card-header bg-primary text-white">
-          Choose Size And Crust
+          Choose Toppings
         </div>
         <div class="card-body">
           <div class="card" style="width: 100%;">
@@ -334,6 +361,14 @@
 
 
             </ul>
+
+            <div class="card" style="width: 100%;">
+              <div class="card-header d-flex justify-content-end">
+                <button type="button" class="btn btn-primary">Checkout</button>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -341,33 +376,7 @@
 
     </div>
   </div>
-
-
-
-
-
-
-<!--  <ul class="nav nav-tabs">-->
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1 </span>Size And Crust</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link" href="#"><span class="badge bg-secondary">2 </span>Cheese And Sauce</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link" href="#"><span class="badge bg-secondary">3 </span>Toppings</a>-->
-<!--    </li>-->
-<!--  </ul>-->
-
-
-
-
-
 </div>
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
